@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.assignment.scrollsplitassignment.viewmodel.HomeViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.fragment.HomeFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/sliderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_240"
+            app:layout_constraintEnd_toStartOf="@id/guidelineVerticalRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.assignment.scrollsplitassignment.view.autoimageslider.SliderView
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/shimmer_color"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:sliderAnimationDuration="4000"
+                app:sliderAutoCycleDirection="right"
+                app:sliderIndicatorAnimationDuration="300"
+                app:sliderIndicatorEnabled="true"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorRadius="@dimen/_1adp"
+                app:sliderIndicatorSelectedColor="@color/grey_transparent_10"
+                app:sliderIndicatorUnselectedColor="#FFFFFF"
+                app:sliderScrollTimeInSec="2000" />
+
+            <include
+                android:id="@+id/sliderShimmerLayout"
+                layout="@layout/item_slider_shimmer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/horizontalFreeScrollRecyclerView"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="@dimen/margin_130"
+            android:layout_marginTop="@dimen/_15adp"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalRight"
+            app:layout_constraintStart_toEndOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@+id/sliderLayout" />
+
+        <include
+            android:id="@+id/horizontalFreeScrollShimmerLayout"
+            layout="@layout/item_horizontal_free_scroll_shimmer_layout"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="@dimen/margin_130"
+            android:layout_marginTop="@dimen/_15adp"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalRight"
+            app:layout_constraintStart_toEndOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@+id/sliderLayout" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/splitBannerRecyclerView"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="@dimen/margin_240"
+            android:layout_marginTop="@dimen/_15adp"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalRight"
+            app:layout_constraintStart_toEndOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalFreeScrollRecyclerView" />
+
+        <include
+            android:id="@+id/splitBannerShimmerLayout"
+            layout="@layout/item_slipt_banner_shimmer_layout"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="@dimen/margin_240"
+            android:layout_marginTop="@dimen/_15adp"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalRight"
+            app:layout_constraintStart_toEndOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalFreeScrollRecyclerView" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVerticalLeft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.03" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVerticalRight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.97" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

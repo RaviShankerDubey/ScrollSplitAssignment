@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.assignment.scrollsplitassignment.view.shimmerlayout.ShimmerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shimmerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_150adp"
+    app:cardElevation="@dimen/margin_2"
+    app:shimmer_auto_start="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shimmer_slider_rectangle_bg" />
+    </LinearLayout>
+</com.assignment.scrollsplitassignment.view.shimmerlayout.ShimmerLayout>

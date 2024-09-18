@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bannerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/bannerSliderImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY" />
+
+    <ProgressBar
+        android:id="@+id/imageSliderBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:id="@+id/bannerGifContainerImg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="50dp"
+        android:contentDescription="@string/app_name" />
+
+    <FrameLayout
+        android:id="@+id/bannerShadowContainerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_overlay">
+
+        <TextView
+            android:id="@+id/bannerDescriptionTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="25dp"
+            android:padding="6dp"
+            android:textColor="#FFF"
+            android:textSize="@dimen/textsize_18"
+            android:visibility="gone" />
+    </FrameLayout>
+</FrameLayout>

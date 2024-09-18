@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/errorViewLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/errorImg"
+        android:layout_width="@dimen/_120adp"
+        android:layout_height="@dimen/_120adp"
+        android:contentDescription="@string/no_internet"
+        android:src="@drawable/no_internet_img" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/errorHeaderTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_4"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:text="@string/no_internet_title"
+        android:textColor="@color/grey_800"
+        android:textSize="@dimen/_12asp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/errorTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_36"
+        android:layout_marginTop="@dimen/margin_3"
+        android:layout_marginEnd="@dimen/margin_36"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="@string/no_internet"
+        android:textSize="@dimen/_11asp" />
+
+    <Button
+        android:id="@+id/tryAgainBtn"
+        android:layout_width="@dimen/_140adp"
+        android:layout_height="@dimen/_38adp"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@drawable/gradient_btn_bg"
+        android:contentDescription="@null"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingStart="@dimen/margin_24"
+        android:paddingEnd="@dimen/margin_24"
+        android:text="@string/try_again"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12asp"
+        android:visibility="gone" />
+
+</LinearLayout>

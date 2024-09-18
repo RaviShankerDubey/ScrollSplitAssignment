@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="@color/white"
+    android:radius="@dimen/margin_10">
+    <item android:id="@android:id/background">
+        <selector>
+            <item android:state_pressed="false">
+                <layer-list>
+                    <!-- SHADOW -->
+                    <item>
+                        <shape>
+                            <solid android:color="#20000000" />
+                            <!-- alttan gölge -->
+                            <corners
+                                android:bottomLeftRadius="@dimen/_22adp"
+                                android:bottomRightRadius="@dimen/_22adp"
+                                android:topLeftRadius="@dimen/_22adp"
+                                android:topRightRadius="@dimen/_22adp" />
+                        </shape>
+                    </item>
+                    <item
+                        android:bottom="@dimen/margin_2"
+                        android:end="@dimen/margin_1"
+                        android:start="@dimen/margin_1">
+                        <shape>
+                            <gradient
+                                android:angle="360"
+                                android:endColor="@color/colorPrimary"
+                                android:startColor="@color/colorPrimary" />
+                            <corners
+                                android:bottomLeftRadius="@dimen/_22adp"
+                                android:bottomRightRadius="@dimen/_22adp"
+                                android:topLeftRadius="@dimen/_22adp"
+                                android:topRightRadius="@dimen/_22adp" />
+                        </shape>
+                    </item>
+                </layer-list>
+            </item>
+
+            <item android:state_pressed="true">
+                <layer-list>
+                    <!-- SHADOW -->
+                    <item>
+                        <shape>
+                            <solid android:color="#20000000" />
+                            <corners
+                                android:bottomLeftRadius="@dimen/_22adp"
+                                android:bottomRightRadius="@dimen/_22adp"
+                                android:topLeftRadius="@dimen/_22adp"
+                                android:topRightRadius="@dimen/_22adp" />
+
+                        </shape>
+                    </item>
+                    <!-- BUTTON -->
+                    <item
+                        android:bottom="@dimen/margin_2"
+                        android:end="@dimen/margin_1"
+                        android:start="@dimen/margin_1">
+                        <shape>
+                            <gradient
+                                android:angle="360"
+                                android:endColor="@color/colorPrimary"
+                                android:startColor="@color/colorPrimary" />
+                            <corners
+                                android:bottomLeftRadius="@dimen/_22adp"
+                                android:bottomRightRadius="@dimen/_22adp"
+                                android:topLeftRadius="@dimen/_22adp"
+                                android:topRightRadius="@dimen/_22adp" />
+                        </shape>
+                    </item>
+                </layer-list>
+            </item>
+        </selector>
+    </item>
+</ripple>

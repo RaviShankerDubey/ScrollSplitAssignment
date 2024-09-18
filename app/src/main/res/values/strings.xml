@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ScrollSplitAssignment</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="home_fragment">Home</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="try_again">Try Again</string>
+    <string name="no_internet_title">No Internet</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="no_internet">Slow or no Internet.\nPlease check your Internet Connection.</string>
+    <string name="internet_connection">Disconnected… Please check your Internet connection!</string>
+    <string name="no_connection_error">Connection failed. Please check your internet connection.</string>
+    <string name="enter_mobile_no">Enter Mobile No</string>
+    <string name="forgot_password"><u>Forgot Password / Pin</u></string>
+    <string name="logout">Logout</string>
+    <string name="ok">Ok</string>
+</resources>

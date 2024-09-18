@@ -1,0 +1,124 @@
+<resources>
+
+    <style name="Theme.ScrollSplitAssignment" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/primary_text_color</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/transformPivotTarget</item>
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+
+        <item name="android:textColorPrimary">@color/grey_800</item>
+        <item name="android:textColorSecondary">@color/grey_800</item>
+
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/text_color_also_on_call</item>
+        <item name="colorControlActivated">@color/yellow_1</item>
+    </style>
+
+    <!--Navigation Menu Icon Color White/Black-->
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.ScrollSplitAssignment.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+        <!--<item name="android:homeAsUpIndicator">@drawable/ic_action_navigation_arrow_back_inverted</item>-->
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="Theme.SpiceBucket.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.SpiceBucket.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="corner_round_3" parent="">
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <!--<item name="cornerSizeTopLeft">3%</item>
+        <item name="cornerSizeTopRight">3%</item>-->
+        <item name="cornerSizeBottomLeft">3%</item>
+        <item name="cornerSizeBottomRight">3%</item>
+    </style>
+
+    <style name="corner_round_4" parent="">
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSizeTopLeft">4%</item>
+        <item name="cornerSizeTopRight">4%</item>
+        <item name="cornerSizeBottomLeft">4%</item>
+        <item name="cornerSizeBottomRight">4%</item>
+    </style>
+
+    <style name="corner_round_5" parent="">
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSizeTopLeft">5%</item>
+        <item name="cornerSizeTopRight">5%</item>
+        <item name="cornerSizeBottomLeft">5%</item>
+        <item name="cornerSizeBottomRight">5%</item>
+    </style>
+
+    <style name="corner_round_10" parent="">
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSizeTopLeft">10%</item>
+        <item name="cornerSizeTopRight">10%</item>
+        <item name="cornerSizeBottomLeft">10%</item>
+        <item name="cornerSizeBottomRight">10%</item>
+    </style>
+
+    <style name="OtpWidget.OtpView" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+</resources>
