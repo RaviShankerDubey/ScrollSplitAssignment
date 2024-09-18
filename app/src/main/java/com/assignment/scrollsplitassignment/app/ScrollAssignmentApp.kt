@@ -11,6 +11,7 @@ import java.io.File
 @HiltAndroidApp
 class ScrollAssignmentApp : Application() {
 
+
     override fun onCreate() {
         super.onCreate()
         instance = this
